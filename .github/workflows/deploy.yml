@@ -18,6 +18,7 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/rmansilla92/simplebank:latest
+          github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
